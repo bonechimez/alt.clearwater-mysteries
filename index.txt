@@ -39,5 +39,33 @@
     </div>
   
     <p><i>[Forum is in read-only mode. No new posts allowed.]</i></p>
+<script>
+    function showRandomPopup() {
+        let images = [
+            "creepy_image.jpg",  // Make sure this file is in your repo
+            "weird_photo.jpg"    // Add more images if you want
+        ];
+
+        let randomIndex = Math.floor(Math.random() * images.length);
+        let imageUrl = images[randomIndex];
+
+        let popup = window.open("", "popup", "width=400,height=300");
+        popup.document.write(`
+            <html>
+                <head><title>Unknown</title></head>
+                <body style="background:black; color:red; text-align:center; font-family:Courier;">
+                    <p>This isn't supposed to be here.</p>
+                    <img src="${imageUrl}" width="300">
+                    <p><a href="#" onclick="window.close()">Close</a></p>
+                </body>
+            </html>
+        `);
+    }
+
+    window.onload = function() {
+        setTimeout(showRandomPopup, Math.random() * 5000 + 2000); // Shows in 2-7 seconds
+    };
+</script>
+
 </body>
 </html>
