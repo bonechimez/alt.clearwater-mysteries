@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - alt.clearwater.mysteries</title>
+    <style>
+        body { background-color: black; color: lime; font-family: 'Courier New', monospace; text-align: center; }
+        input, button { background: black; color: lime; border: 1px solid lime; font-family: 'Courier New', monospace; }
+        #error { color: red; visibility: hidden; }
+    </style>
+</head>
+<body>
+    <h1>alt.clearwater.mysteries</h1>
+    <p><i>You must log in to access restricted threads.</i></p>
+    
+    <form onsubmit="return fakeLogin()">
+        <label>Username: <input type="text" id="username"></label><br><br>
+        <label>Password: <input type="password" id="password"></label><br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <p id="error">Incorrect username or password.</p>
+
+    <script>
+        function fakeLogin() {
+            document.getElementById('error').style.visibility = 'visible';
+            return false; // Prevents form submission
+        }
+    </script>
+</body>
+</html>
