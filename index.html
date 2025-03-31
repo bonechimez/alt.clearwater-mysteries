@@ -4,27 +4,71 @@
     <meta charset="UTF-8">
     <title>alt.clearwater.mysteries - Home</title>
     <style>
-        body { background-color: black; color: lime; font-family: 'Courier New', monospace; }
-        h1 { text-align: center; }
-        .thread { margin: 20px; padding: 10px; border: 1px dashed lime; }
-        a { color: cyan; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        #playButton {
+        body {
             background-color: black;
             color: lime;
-            padding: 10px 20px;
-            border: 2px solid lime;
-            font-family: 'Courier New';
-            cursor: pointer;
+            font-family: 'Courier New', monospace;
+            cursor: url('your-cursor-image.png'), auto; /* Custom cursor */
         }
-        #playButton:hover {
-            background-color: lime;
-            color: black;
+
+        h1 {
+            text-align: center;
+        }
+
+        .thread {
+            margin: 20px;
+            padding: 10px;
+            border: 1px dashed lime;
+        }
+
+        a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling the audio player */
+        #audioPlayer {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: black;
+            color: lime;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px dashed lime;
         }
     </style>
+
+    <script>
+        let originalTitle = document.title;
+        let glitchTitle = "SYSTEM ERROR - 404 THREADS MISSING";
+
+        function glitchTitleEffect() {
+            document.title = (Math.random() > 0.5) ? glitchTitle : originalTitle;
+        }
+
+        setInterval(glitchTitleEffect, 3000);
+    </script>
+
+    <p id="typing" style="color:gray; font-style:italic; display:none;">AnonymousUser112 is typing...</p>
+
+    <script>
+        function showTyping() {
+            document.getElementById("typing").style.display = "block";
+            setTimeout(() => { document.getElementById("typing").style.display = "none"; }, 5000);
+        }
+        
+        setTimeout(showTyping, Math.random() * 20000 + 5000); // Random between 5s and 25s
+    </script>
+
 </head>
 <body>
-    <h1>alt.clearwater.mysteries</h1>
+
+    <h1> alt.clearwater.mysteries</h1>
     <p>Welcome to the underground discussion board for Clearwater’s unsolved mysteries.</p>
 
     <div class="thread">
@@ -54,24 +98,21 @@
 
     <p><i>[Forum is in read-only mode. No new posts allowed.]</i></p>
 
-    <button id="playButton">Play Song</button>
+    <!-- Audio Player (Fixed on Page) -->
+    <div id="audioPlayer">
+        <audio controls autoplay loop>
+            <source src="your-song-file.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
 
-    <audio id="backgroundAudio" style="display:none;" loop>
-        <source src="your-song-file.wav" type="audio/wav">
-        <source src="your-song-file.mp3" type="audio/mp3">
-        <source src="your-song-file.ogg" type="audio/ogg">
-        Your browser does not support the audio element.
-    </audio>
+    <!-- Custom Cursor (Ghost or Skull Image) -->
+    <!-- Make sure to upload your cursor image (e.g., 'ghost-cursor.png') to your repository -->
+    <style>
+        body {
+            cursor: url('ghost-cursor.png'), auto;  /* Replace with your custom image file */
+        }
+    </style>
 
-    <script>
-        // Set audio volume to 50% when the page loads
-        let audio = document.getElementById("backgroundAudio");
-        audio.volume = 0.5;  // Set the volume to 50%
-
-        // Play the audio when the button is clicked
-        document.getElementById("playButton").addEventListener("click", function() {
-            audio.play();
-        });
-    </script>
 </body>
 </html>
