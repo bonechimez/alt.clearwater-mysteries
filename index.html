@@ -69,5 +69,22 @@
             let images = [
                 "creepy_image.jpg"  // Make sure this file is in your repo_
 
+                 <!-- Hidden Audio Player with 50% Volume -->
+    <audio autoplay loop style="display:none;" id="backgroundAudio">
+        <source src="your-song-file.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Set audio volume to 50% when page loads
+        window.onload = function() {
+            var audio = document.getElementById("backgroundAudio");
+            audio.volume = 0.5;  // Set the volume to 50%
+        };
+    </script>
+
+</body>
+</html>
+
                 <p><a href="login.html">[Login]</a></p>
 
