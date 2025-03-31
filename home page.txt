@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alt.clearwater.mysteries - Home</title>
+    <style>
+        body { background-color: black; color: lime; font-family: 'Courier New', monospace; }
+        h1 { text-align: center; }
+        .thread { margin: 20px; padding: 10px; border: 1px dashed lime; }
+        a { color: cyan; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1> alt.clearwater.mysteries</h1>
+    <p>Welcome to the underground discussion board for Clearwater’s unsolved mysteries.</p>
+
+    <div class="thread">
+        <a href="lake-lights.html">The Greystone Cipher - What's Really Inside?</a>  
+        <br><small>Posted by BookWorm87 on 04/26/98</small>
+    </div>
+
+    <div class="thread">
+        <a href="lost-yearbook.html">THE WORM?</a>  
+        <br><small>Posted by EchoNoMore on 11/14/01</small>
+    </div>
+
+    <div class="thread">
+        <a href="vanishing-town.html">Danetta Cook Files</a>  
+        <br><small>Posted by MiserysCompanie on 12/28/98</small>
+    </div>
+<div class="thread">
+        <a href="vanishing-town.html">Leave the Bottle Out</a>  
+        <br><small>Posted by EmptyGlasses on 02/16/98</small>
+    </div><div class="thread">
+  
+        <a href="vanishing-town.html">Pale Moon Disaster</a>  
+        <br><small>Posted by CellarDoor97 on 01/08/98</small>
+    </div>
+  
+    <p><i>[Forum is in read-only mode. No new posts allowed.]</i></p>
+</body>
+</html>

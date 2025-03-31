@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE WORM? - alt.clearwater.mysteries</title>
+    <style>
+        body { background-color: black; color: lime; font-family: 'Courier New', monospace; }
+        h2 { color: cyan; }
+        .post { border-bottom: 1px dashed lime; padding: 10px; }
+        .username { color: yellow; font-weight: bold; }
+        .timestamp { color: gray; font-size: 12px; }
+        a { color: cyan; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Forum</a>
+    <h2>THE WORM? </h2>
+
+    <div class="post">
+        <span class="username">TheLegend27</span> <span class="timestamp">[03/28/98]</span>
+        <p>u ever notice how nobody whos actually seen the clearwater worm wants 2 talk about it? suspicious. fishermen never mention it unless their drunk or trying 2 scare newcomers. bet its just bs stories.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">Mike4</span> <span class="timestamp">[03/29/98]</span>
+        <p>I’ve heard the reports. Local fishermen who’ve been around for decades won’t go near the shoreline after dark. But here’s the weird part - there are nooooooo photos. Not a single one. You’d think someone would’ve caught it on camera by now, right? Something’s off about that. Something’s being hidden.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">Dizzee</span> <span class="timestamp">[04/01/98]</span>
+        <p><i>this is so fake wtf maybe it was real back when dinosaurs roamed the earth rofl</i></p>
+    </div>
+
+    <div class="post">
+        <span class="username">DuckSauce</span> <span class="timestamp">[04/14/98]</span>
+        <p>funnily enough ive seen it. very cool and big but its no dewey lake monster</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">FishingKing420</span> <span class="timestamp">[05/22/98]</span>
+        <p> Witnesses say The Wyrm is brick red. I like to think it is grey.</p>
+    </div>
+
+   <div class="post">
+        <span class="username">LadiesMan217</span> <span class="timestamp">[05/27/98]</span>
+        <p>Clearwater Worm? Probably just a huge sturgeon or something. I’m sure these people just aren’t used to seeing big fish. The real mystery is why the town let the shoreline become such a dumping ground for trash. Not everything has to be tied to some ancient creature.
+
+</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">FaerieJunkie</span> <span class="timestamp">[06/06/98]</span>
+        <p>Sounds like every other big fish tale but it isn't. My gramps swears he saw something as a kid! Said it was a big as a building, strong enough to beach a ship just from sailing near it.</p>
+    </div>
+
+    <p><i>[Thread locked by moderator.]</i></p>
+</body>
+</html>

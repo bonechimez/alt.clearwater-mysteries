@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leave the Bottle Out - alt.clearwater.mysteries</title>
+    <style>
+        body { background-color: black; color: lime; font-family: 'Courier New', monospace; }
+        h2 { color: cyan; }
+        .post { border-bottom: 1px dashed lime; padding: 10px; }
+        .username { color: yellow; font-weight: bold; }
+        .timestamp { color: gray; font-size: 12px; }
+        a { color: cyan; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Forum</a>
+    <h2>Leave the Bottle Out </h2>
+
+    <div class="post">
+        <span class="username">EmptyGlasses</span> <span class="timestamp">[02/16/98]</span>
+        <p>Okay, I’ve heard this story since I was a kid, but no one ever has real details. The Milkman—some urban legend from the ‘50s where entire families disappeared overnight, doors locked from the inside, only empty milk bottles left on the porch. But there’s no real evidence, right? No police reports? No newspaper articles? Someone has to have proof if this actually happened.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">LastDelivery</span> <span class="timestamp">[02/17/98]</span>
+        <p>You won’t find newspaper articles because they don’t exist anymore. I tried. There were reports—old crime briefs, missing persons notices. But they’ve all been removed from the archives. It’s like someone went back and erased it all. Only reason we even know about it is because people remember.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">Foghound</span> <span class="timestamp">[02/20/98]</span>
+        <p>My grandma told me about this. She said back then, folks started staying up late, waiting to see the Milkman. Some of them did. And after that? They didn’t leave out bottles anymore.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">ShutterMama</span> <span class="timestamp">[02/22/98]</span>
+        <p>Here's what I don’t get—why milk bottles? It’s so specific. If it was just some serial killer or freak accident, why did every single disappearance come with neatly lined-up bottles? Like, why were they untouched? It’s too staged.</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">LostAndFound</span> <span class="timestamp">[02/24/98]</span>
+        <p>I lived near an old guy who swore his family was supposed to be next. Said his mother forgot to leave the bottles out one night, and they were the only house on their street that didn’t disappear. I always thought he was just messing with me, but now I wonder.</p>
+    </div>
+
+   <div class="post">
+        <span class="username">BackRowSeat</span> <span class="timestamp">[02/27/98]</span>
+        <p>Sounds like a twisted version of those old-timey urban legends. You know, like “don’t break the chain” kinda deals. Maybe it was just a way to scare kids into finishing their milk or some weird Cold War paranoia thing?
+</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">ADMIN</span> <span class="timestamp">[03/04/98]</span>
+        <p>You guys ever notice how nobody can actually describe the Milkman? No one knows what he looked like. No truck, no name, no record of any dairy company servicing Clearwater at the time. Just… an expectation that milk would arrive. And if you didn’t follow the rules, you were gone.</p>
+    </div>
+  
+  
+    <div class="post">
+        <span class="username">ADMIN</span> <span class="timestamp">[03/04/98]</span>
+        <p>Please remember that folklore and reality are two different things. While discussion is welcome, let’s keep it focused on facts where possible.
+</p>
+    </div>
+  
+    <div class="post">
+        <span class="username">TimelyTurtle</span> <span class="timestamp">[03/15/98]</span>
+        <p>Alright, so serious question: if the Milkman wasn’t real, then why do old Clearwater properties still have milk boxes on the porches? No one’s lived there for years.
+</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">OffWhite</span> <span class="timestamp">[03/23/98]</span>
+        <p>They say he comes before the dawn,
+A shadow cast where light has gone.
+With bottles clear and footsteps light,
+He walks unseen throughout the night.
+
+Leave it out, just one, not two,
+He only takes what’s meant for you.
+A sip, a taste, a life to borrow....
+No past, no trace, no bright tomorrow.
+
+The doors stay locked, the town sleeps tight,
+Yet houses stand as hollowed sites.
+The milk turns sour, the floors grow cold,
+No hands to drink, no mouths to scold.
+
+A clink of glass, a whispered breath,
+A doorstep lined with gifts of death.
+So leave it out, just like before...
+Or he will knock upon your door.
+         
+</p>
+    </div>
+
+    <p><i>[Thread locked by moderator.]</i></p>
+</body>
+</html>

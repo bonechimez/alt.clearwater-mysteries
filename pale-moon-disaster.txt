@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pale Moon Disaster - alt.clearwater.mysteries</title>
+    <style>
+        body { background-color: black; color: lime; font-family: 'Courier New', monospace; }
+        h2 { color: cyan; }
+        .post { border-bottom: 1px dashed lime; padding: 10px; }
+        .username { color: yellow; font-weight: bold; }
+        .timestamp { color: gray; font-size: 12px; }
+        a { color: cyan; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Forum</a>
+    <h2>Pale Moon Disaster </h2>
+
+    <div class="post">
+        <span class="username">CellarDoor97</span> <span class="timestamp">[01/08/98]</span>
+        <p>ok so i know some of you are already familiar with Pale Moon, the movie that straight-up disappeared along with the cast & crew in ‘77. i’ve been reading about it for years but never thought of actually going to Clearwater.
+
+except now my dumbass friend is talking about taking a road trip to check out the filming locations, and idk what to do. like, do i let them go alone? do i go with them? or do i duct tape them to a chair and make them watch Texas Chainsaw until they realize abandoned places = BAD IDEA.
+
+the whole thing freaks me out. there’s no complete crew list, no proper records, and then there’s the Lost Reel… has ANYONE here actually seen it? or are we all just passing the same stories around?
+
+help me out here.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">NightWatchman</span> <span class="timestamp">[01/09/98]</span>
+        <p>ok, since we’re doing this, here’s everything i know.
+
+
+Pale Moon was an indie horror film shot in Clearwater, MT in June 1977. It was directed by Elliot Kane, a guy who did a few crime flicks before trying to pivot into “psychological horror” (aka he wanted to be the next Romero but without zombies).
+
+The plot was about a detective arriving in a dying factory town, only to realize the townspeople were pretending everything was fine, even though something was moving beneath them. The secret? VAMPIRES. Real slow-burn, existential dread type stuff.
+
+
+The cast & crew (about 12 people) vanished before they could finish filming. No trace. No bodies. No reports of them leaving town.
+The weirdest part? Their cars were found abandoned, plus a few half-built set pieces.
+
+The last transmission anyone heard was a radio call from the crew to a neighboring town:
+
+“We keep losing our bearings. I swear we just passed the same diner three times. The road back is gone.”
+
+after that? nothing.
+
+
+Almost a decade later (1985-ish?), an unmarked film reel showed up at an estate sale. It was labeled B-Roll - Clearwater. No credits, no timestamp, just raw footage from the shoot.
+
+Most of it is normal, just location shots & outtakes. But the last two minutes? Buckle up, kid.
+
+The camera lingers on an old factory ruin at dusk. The wind makes the metal groan.
+
+Someone off-screen mutters: “Why does it sound like that?”
+
+There’s this weird rhythmic sound in the background. Can't really describe it, but...bone-chilling.
+
+The camera swings toward a cracked section of pavement. Something metallic glints inside.
+
+The camera shakes.
+
+A sharp breath. Then static.
+
+Cut.
+
+No credits, no context, no info on who shot it.
+
+Soooo now we're on to the theories part. My guess?
+Cursed film. Classic Don’t Mess With Lost Media situation.
+
+The town eats people. Not the first time someone disappeared there.
+
+Lost in Clearwater. Like, literally. What if the crew never left because…they couldn’t?
+
+The reel is a warning. If the last two minutes show something breaking through… then maybe we were never supposed to see it.
+
+so yeah, if your friend thinks this is a fun road trip idea, tell them the last people who tried never came back</p>
+    </div>
+
+    <div class="post">
+        <span class="username">SkipTracer</span> <span class="timestamp">[01/12/98]</span>
+        <p>if ur friend is dumb enough to go, at least make them bring a disposable camera so we can find their last photo when they disappear.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">GhoulieGrin</span> <span class="timestamp">[01/15/98]</span>
+        <p>i hate this. i hate all of this. i saw the Lost Reel once, and i don’t care if you believe me, but the last two minutes change every time.
+
+one time the sound was different. another time, the thing in the pavement was closer.
+
+i turned it off after that.
+
+don’t go.</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">NoirSnob</span> <span class="timestamp">[02/22/98]</span>
+        <p>why do people act like Elliot Kane was some tragic genius? his movies sucked. if he hadn’t vanished, Pale Moon would’ve flopped and we’d all have moved on.</p>
+    </div>
+
+   <div class="post">
+        <span class="username">PissTrack</span> <span class="timestamp">[02/27/98]</span>
+        <p>has anyone actually seen the full B-Roll footage? or does everyone just parrot the same few details? like is it actually out there or nah?</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">ADMIN</span> <span class="timestamp">[02/27/98]</span>
+        <p>This thread is already getting out of hand. DO NOT ENCOURAGE TRESSPASSING. Keep discussions SPECULATIVE. (Post edited by Admin.) </p>
+    </div>
+  
+      <div class="post">
+        <span class="username">DeadAir</span> <span class="timestamp">[03/19/98]</span>
+        <p>i used to think the Lost Reel was just an urban legend. but now i keep thinking about that last transmission...
+
+ </p>
+    </div>
+  
+    <p><i>[Thread locked by moderator.]</i></p>
+</body>
+</html>

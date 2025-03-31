@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Danetta Cook Files - alt.clearwater.mysteries</title>
+    <style>
+        body { background-color: black; color: lime; font-family: 'Courier New', monospace; }
+        h2 { color: cyan; }
+        .post { border-bottom: 1px dashed lime; padding: 10px; }
+        .username { color: yellow; font-weight: bold; }
+        .timestamp { color: gray; font-size: 12px; }
+        a { color: cyan; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <a href="index.html">← Back to Forum</a>
+    <h2>Danetta Cook Files </h2>
+
+    <div class="post">
+        <span class="username">MiserysCompanie</span> <span class="timestamp">[12/28/98]</span>
+        <p>I came across something weird while digging through old records—does anyone else know about Danetta Cook? Supposedly, she’s the only person who ever left Clearwater. Not just moved away—escaped. Ended up in an asylum in the next town over. But here’s the part that gets me: the only thing she had on her was a yearbook photo… and her entire class was missing from the book.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">ColdCaseJunkie</span> <span class="timestamp">[12/29/98]</span>
+        <p>I’ve heard bits and pieces about her, but nothing solid. What year did she graduate? If she really left Clearwater, why didn’t anyone else? What made her different?</p>
+    </div>
+
+    <div class="post">
+        <span class="username">Foghound</span> <span class="timestamp">[01/02/99]</span>
+        <p>Okay, but what’s the actual story? People love to make this sound creepier than it is. She probably had a breakdown, and the missing class thing? Misprint. Happens all the time in old records. Not everything has to be a conspiracy.</p>
+    </div>
+
+    <div class="post">
+        <span class="username">ShutterMama</span> <span class="timestamp">[01/08/99]</span>
+        <p>It wasn’t a misprint. I saw the yearbook once—borrowed it from a local collector. The class roster jumps straight from ‘78 to ‘80. It’s like the whole group just didn’t exist. No names, no photos. Just… gone.</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">LostAndFound</span> <span class="timestamp">[01/10/99]</span>
+        <p> I swear I saw a newspaper clipping about her once. It said she was found wandering the highway barefoot, mumbling something nobody could understand. They never figured out where she came from at first—Clearwater wasn’t on the map anymore. She kept that yearbook photo with her the whole time, wouldn’t let anyone take it.</p>
+    </div>
+
+   <div class="post">
+        <span class="username">BackRowSeat</span> <span class="timestamp">[01/15/99]</span>
+        <p>You guys are all missing the real question. If she was the only one to leave… where did everyone else go? Not like they were all at bingo. Maybe she just wanted attention?
+</p>
+    </div>
+  
+      <div class="post">
+        <span class="username">ADMIN</span> <span class="timestamp">[01/16/99]</span>
+        <p>Let's keep this discussion within reason. Speculation is fine, but let’s not spread misinformation.
+        <em>[Post edited by Admin.]</p>
+    </div>
+
+    <p><i>[Thread locked by moderator.]</i></p>
+</body>
+</html>
