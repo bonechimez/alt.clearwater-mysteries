@@ -10,62 +10,64 @@
         a { color: cyan; text-decoration: none; }
         a:hover { text-decoration: underline; }
     </style>
+    <script>
+    let originalTitle = document.title;
+    let glitchTitle = "SYSTEM ERROR - 404 THREADS MISSING";
+
+    function glitchTitleEffect() {
+        document.title = (Math.random() > 0.5) ? glitchTitle : originalTitle;
+    }
+
+    setInterval(glitchTitleEffect, 3000);
+</script>
+<p id="typing" style="color:gray; font-style:italic; display:none;">AnonymousUser112 is typing...</p>
+
+<script>
+    function showTyping() {
+        document.getElementById("typing").style.display = "block";
+        setTimeout(() => { document.getElementById("typing").style.display = "none"; }, 5000);
+    }
+    
+    setTimeout(showTyping, Math.random() * 20000 + 5000); // Random between 5s and 25s
+</script>
+
+    
 </head>
 <body>
     <h1> alt.clearwater.mysteries</h1>
     <p>Welcome to the underground discussion board for Clearwater’s unsolved mysteries.</p>
 
     <div class="thread">
-        <a href="lake-lights.html">The Greystone Cipher - What's Really Inside?</a>  
+        <a href="The Greystone Cipher - What's Really Inside?.html">The Greystone Cipher - What's Really Inside?</a>  
         <br><small>Posted by BookWorm87 on 04/26/98</small>
     </div>
 
     <div class="thread">
-        <a href="lost-yearbook.html">THE WORM?</a>  
+        <a href="THE WORM?.html">THE WORM?</a>  
         <br><small>Posted by EchoNoMore on 11/14/01</small>
     </div>
 
     <div class="thread">
-        <a href="vanishing-town.html">Danetta Cook Files</a>  
+        <a href="Danetta Cook Files.html">Danetta Cook Files</a>  
         <br><small>Posted by MiserysCompanie on 12/28/98</small>
     </div>
-<div class="thread">
-        <a href="vanishing-town.html">Leave the Bottle Out</a>  
+
+    <div class="thread">
+        <a href="Leave the Bottle Out.html">Leave the Bottle Out</a>  
         <br><small>Posted by EmptyGlasses on 02/16/98</small>
-    </div><div class="thread">
-  
-        <a href="vanishing-town.html">Pale Moon Disaster</a>  
+    </div>
+
+    <div class="thread">
+        <a href="Pale Moon Disaster.html">Pale Moon Disaster</a>  
         <br><small>Posted by CellarDoor97 on 01/08/98</small>
     </div>
-  
+
     <p><i>[Forum is in read-only mode. No new posts allowed.]</i></p>
-<script>
-    function showRandomPopup() {
-        let images = [
-            "creepy_image.jpg",  // Make sure this file is in your repo
-            "weird_photo.jpg"    // Add more images if you want
-        ];
 
-        let randomIndex = Math.floor(Math.random() * images.length);
-        let imageUrl = images[randomIndex];
+    <script>
+        function showRandomPopup() {
+            let images = [
+                "creepy_image.jpg"  // Make sure this file is in your repo_
 
-        let popup = window.open("", "popup", "width=400,height=300");
-        popup.document.write(`
-            <html>
-                <head><title>Unknown</title></head>
-                <body style="background:black; color:red; text-align:center; font-family:Courier;">
-                    <p>This isn't supposed to be here.</p>
-                    <img src="${imageUrl}" width="300">
-                    <p><a href="#" onclick="window.close()">Close</a></p>
-                </body>
-            </html>
-        `);
-    }
+                <p><a href="login.html">[Login]</a></p>
 
-    window.onload = function() {
-        setTimeout(showRandomPopup, Math.random() * 5000 + 2000); // Shows in 2-7 seconds
-    };
-</script>
-
-</body>
-</html>
