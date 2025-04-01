@@ -6,9 +6,9 @@
     <style>
         body {
             background-color: black;
-            color: lime;
+            color: white; /* Change font to white */
             font-family: 'Courier New', monospace;
-            cursor: url('ghost-cursor.png'), auto;
+            cursor: url('ghost-cursor.png'), auto; /* Custom cursor */
         }
 
         h1 {
@@ -21,49 +21,47 @@
             border: 1px dashed lime;
         }
 
-        .dust {
-            position: absolute;
-            width: 5px;
-            height: 5px;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: dust 0.4s ease-out forwards;
-            pointer-events: none;
+        a {
+            color: cyan;
+            text-decoration: none;
         }
 
-        @keyframes dust {
-            0% {
-                transform: scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: scale(0);
-                opacity: 0;
-            }
+        a:hover {
+            text-decoration: underline;
         }
 
+        /* Tabs at the top */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .tab {
+            background-color: black;
+            color: lime;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: 1px dashed lime;
+            font-size: 18px;
+        }
+
+        .tab:hover {
+            background-color: lime;
+            color: black;
+        }
+
+        /* Styling for the audio player */
         #audioPlayer {
             position: fixed;
             bottom: 20px;
             left: 20px;
             background-color: black;
-            color: lime;
+            color: white;
             padding: 10px;
             border-radius: 5px;
-            border: 1px dashed lime;
-        }
-
-        /* Lock content */
-        .locked {
-            background-color: rgba(255, 0, 0, 0.1);
-            color: #ff0000;
-        }
-
-        /* Fake Ad */
-        .ad {
-            background-color: black;
-            border: 1px solid lime;
-            padding: 10px;
+            border: 1px dashed white;
         }
     </style>
 
@@ -76,28 +74,47 @@
         }
 
         setInterval(glitchTitleEffect, 3000);
+    </script>
 
-        document.body.addEventListener('mousemove', (e) => {
-            let dust = document.createElement('div');
-            dust.classList.add('dust');
-            document.body.appendChild(dust);
+    <p id="typing" style="color:gray; font-style:italic; display:none;">mirrors is typing...</p>
 
-            dust.style.left = `${e.pageX}px`;
-            dust.style.top = `${e.pageY}px`;
+    <script>
+        function showTyping() {
+            document.getElementById("typing").style.display = "block";
+            setTimeout(() => { document.getElementById("typing").style.display = "none"; }, 5000);
+        }
+        
+        setTimeout(showTyping, Math.random() * 20000 + 5000); // Random between 5s and 25s
+    </script>
 
-            setTimeout(() => {
-                dust.remove();
-            }, 400);
-        });
-
-        function showTruthError() {
-            alert("Access Denied: You are not authorized to view 'The Truth'.");
+    <!-- Function to show the login "Oops" popup -->
+    <script>
+        function showLoginPopup() {
+            let popup = window.open("", "OopsPopup", "width=500,height=500");
+            popup.document.write(`
+                <html>
+                    <head><title>Oops!</title></head>
+                    <body style="background:black; color:red; text-align:center; font-family:Courier;">
+                        <h2>Oops! You aren't supposed to be here...</h2>
+                        <img src="creepy_image.jpg" width="300">
+                        <p>This page doesn't exist. Please move along.</p>
+                        <p><a href="#" onclick="window.close()">Close</a></p>
+                    </body>
+                </html>
+            `);
         }
     </script>
 </head>
-
 <body>
-    <h1> alt.clearwater.mysteries</h1>
+
+    <!-- Navigation Tabs -->
+    <div class="tabs">
+        <div class="tab" onclick="window.location.href='index.html'">Home</div>
+        <div class="tab" onclick="window.location.href='archives.html'">Archives</div>
+        <div class="tab" onclick="window.location.href='contact.html'">Contact</div>
+    </div>
+
+    <h1>alt.clearwater.mysteries</h1>
     <p>Welcome to the underground discussion board for Clearwater’s unsolved mysteries.</p>
 
     <div class="thread">
@@ -125,37 +142,18 @@
         <br><small>Posted by CellarDoor97 on 01/08/98</small>
     </div>
 
-    <div class="thread locked">
-        <a href="#">Private Thread - Restricted Access</a>  
-        <br><small>Posted by TheInsider on 11/19/99</small>
-        <p><i>This thread is locked. You need special access to read it.</i></p>
-    </div>
-
-    <div class="ad">
-        <p><strong>Ad: Clearwater Investigations</strong></p>
-        <p><i>"Want to know the truth? Subscribe to the Clearwater Files newsletter."</i></p>
-        <p><a href="#">Click here to subscribe</a></p>
-    </div>
-
-    <div class="thread">
-        <a href="javascript:void(0);" onclick="showTruthError()">The Truth</a>
-        <br><small>Posted by Admin on 12/30/99</small>
-    </div>
-
-    <div class="thread">
-        <a href="javascript:void(0);">Hello, does anyone still use this?</a>
-        <br><small>Posted by GhostWatcher on 02/14/00</small>
-        <p><i>It's been years since the last post. Wondering if anyone's still around...</i></p>
-    </div>
-
     <p><i>[Forum is in read-only mode. No new posts allowed.]</i></p>
 
+    <!-- Audio Player (Fixed on Page) -->
     <div id="audioPlayer">
         <audio controls autoplay loop>
             <source src="your-song-file.mp3" type="audio/mp3">
             Your browser does not support the audio element.
         </audio>
     </div>
+
+    <!-- Login Link (which opens the popup) -->
+    <p><a href="#" onclick="showLoginPopup()">[Login]</a></p>
 
 </body>
 </html>
