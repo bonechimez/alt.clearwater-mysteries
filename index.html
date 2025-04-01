@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>alt.clearwater.mysteries - Home</title>
+
+    <!-- Link to Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-color: black;
-            color: white; /* Change font to white */
-            font-family: 'Courier New', monospace;
+            color: white; /* Changed lime to white */
+            font-family: 'Roboto', sans-serif; /* Set font to Roboto */
             cursor: url('ghost-cursor.png'), auto; /* Custom cursor */
         }
 
@@ -18,7 +22,7 @@
         .thread {
             margin: 20px;
             padding: 10px;
-            border: 1px dashed lime;
+            border: 1px dashed white; /* Changed lime to white */
         }
 
         a {
@@ -30,130 +34,22 @@
             text-decoration: underline;
         }
 
-        /* Tabs at the top */
-        .tabs {
-            display: flex;
-            justify-content: center;
-            margin: 20px;
-        }
-
-        .tab {
-            background-color: black;
-            color: lime;
-            padding: 10px 20px;
-            margin: 0 10px;
-            cursor: pointer;
-            border: 1px dashed lime;
-            font-size: 18px;
-        }
-
-        .tab:hover {
-            background-color: lime;
-            color: black;
-        }
-
-        /* Styling for the audio player */
+        /* Styling the audio player */
         #audioPlayer {
             position: fixed;
             bottom: 20px;
             left: 20px;
             background-color: black;
-            color: white;
+            color: white; /* Changed lime to white */
             padding: 10px;
             border-radius: 5px;
-            border: 1px dashed white;
+            border: 1px dashed white; /* Changed lime to white */
+        }
+
+        /* Custom Cursor Style */
+        body {
+            cursor: url('ghost-cursor.png'), auto;  /* Ensure this path is correct */
         }
     </style>
 
     <script>
-        let originalTitle = document.title;
-        let glitchTitle = "SYSTEM ERROR - 404 THREADS MISSING";
-
-        function glitchTitleEffect() {
-            document.title = (Math.random() > 0.5) ? glitchTitle : originalTitle;
-        }
-
-        setInterval(glitchTitleEffect, 3000);
-    </script>
-
-    <p id="typing" style="color:gray; font-style:italic; display:none;">mirrors is typing...</p>
-
-    <script>
-        function showTyping() {
-            document.getElementById("typing").style.display = "block";
-            setTimeout(() => { document.getElementById("typing").style.display = "none"; }, 5000);
-        }
-        
-        setTimeout(showTyping, Math.random() * 20000 + 5000); // Random between 5s and 25s
-    </script>
-
-    <!-- Function to show the login "Oops" popup -->
-    <script>
-        function showLoginPopup() {
-            let popup = window.open("", "OopsPopup", "width=500,height=500");
-            popup.document.write(`
-                <html>
-                    <head><title>Oops!</title></head>
-                    <body style="background:black; color:red; text-align:center; font-family:Courier;">
-                        <h2>Oops! You aren't supposed to be here...</h2>
-                        <img src="creepy_image.jpg" width="300">
-                        <p>This page doesn't exist. Please move along.</p>
-                        <p><a href="#" onclick="window.close()">Close</a></p>
-                    </body>
-                </html>
-            `);
-        }
-    </script>
-</head>
-<body>
-
-    <!-- Navigation Tabs -->
-    <div class="tabs">
-        <div class="tab" onclick="window.location.href='index.html'">Home</div>
-        <div class="tab" onclick="window.location.href='archives.html'">Archives</div>
-        <div class="tab" onclick="window.location.href='contact.html'">Contact</div>
-    </div>
-
-    <h1>alt.clearwater.mysteries</h1>
-    <p>Welcome to the underground discussion board for Clearwater’s unsolved mysteries.</p>
-
-    <div class="thread">
-        <a href="The Greystone Cipher.html">The Greystone Cipher</a>  
-        <br><small>Posted by BookWorm87 on 04/26/98</small>
-    </div>
-
-    <div class="thread">
-        <a href="THE WORM.html">THE WORM</a>  
-        <br><small>Posted by TheLegend27 on 03/08/98</small>
-    </div>
-
-    <div class="thread">
-        <a href="Danetta Cook Files.html">Danetta Cook Files</a>  
-        <br><small>Posted by MiserysCompanie on 12/28/98</small>
-    </div>
-
-    <div class="thread">
-        <a href="Leave the Bottle Out.html">Leave the Bottle Out</a>  
-        <br><small>Posted by EmptyGlasses on 02/16/98</small>
-    </div>
-
-    <div class="thread">
-        <a href="Pale Moon Disaster.html">Pale Moon Disaster</a>  
-        <br><small>Posted by CellarDoor97 on 01/08/98</small>
-    </div>
-
-    <p><i>[Forum is in read-only mode. No new posts allowed.]</i></p>
-
-    <!-- Audio Player (Fixed on Page) -->
-    <div id="audioPlayer">
-        <audio controls autoplay loop>
-            <source src="your-song-file.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-    </div>
-
-    <!-- Login Link (which opens the popup) -->
-    <p><a href="#" onclick="showLoginPopup()">[Login]</a></p>
-
-</body>
-</html>
