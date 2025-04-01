@@ -111,6 +111,26 @@
         }
     </script>
 
+    <!-- Function for Random Popup on "Admin's Break" -->
+    <script>
+        function showRandomPopup() {
+            let randomMessage = Math.random() > 0.5 ? 
+                "Why are you here? Why do you care?" : 
+                "You should have left when you had the chance.";
+
+            let popup = window.open("", "RandomPopup", "width=500,height=300");
+            popup.document.write(`
+                <html>
+                    <head><title>Admin's Break</title></head>
+                    <body style="background:black; color:red; text-align:center; font-family:Courier;">
+                        <h2>${randomMessage}</h2>
+                        <p><a href="#" onclick="window.close()">Close</a></p>
+                    </body>
+                </html>
+            `);
+        }
+    </script>
+
 </head>
 <body>
 
@@ -122,12 +142,15 @@
     <p><a href="about.html">Learn More About Us</a></p>
     <p><a href="contact.html">Contact Us</a></p>
     <p><a href="the_truth.html">The Truth</a></p>
-<div>
-    <p><a href="coming-soon.html" class="link">Admin's Break: Coming Soon</a></p>
-</div>
+    <div>
+        <p><a href="coming-soon.html" class="link">Admin's Break: Coming Soon</a></p>
+    </div>
 
     <!-- Login Link (which opens the popup) -->
     <p><a href="#" onclick="showLoginPopup()">[Login]</a></p>
+
+    <!-- Random Popup Link -->
+    <p><a href="javascript:void(0);" onclick="showRandomPopup()">Admin's Break</a></p>
 
     <!-- Audio Player (Fixed on Page) -->
     <div id="audioPlayer">
