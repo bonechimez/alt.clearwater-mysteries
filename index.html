@@ -3,15 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>alt.clearwater.mysteries - Home</title>
-
-    <!-- Link to Google Fonts for Roboto -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
     <style>
         body {
             background-color: black;
-            color: white; /* Changed lime to white */
-            font-family: 'Roboto', sans-serif; /* Set font to Roboto */
+            color: white;
+            font-family: 'Roboto', sans-serif;
             cursor: url('ghost-cursor.png'), auto; /* Custom cursor */
         }
 
@@ -19,10 +15,8 @@
             text-align: center;
         }
 
-        .thread {
-            margin: 20px;
-            padding: 10px;
-            border: 1px dashed white; /* Changed lime to white */
+        p {
+            text-align: center;
         }
 
         a {
@@ -34,22 +28,81 @@
             text-decoration: underline;
         }
 
-        /* Styling the audio player */
+        /* Audio Player (Fixed on Page) */
         #audioPlayer {
             position: fixed;
             bottom: 20px;
             left: 20px;
             background-color: black;
-            color: white; /* Changed lime to white */
+            color: lime;
             padding: 10px;
             border-radius: 5px;
-            border: 1px dashed white; /* Changed lime to white */
-        }
-
-        /* Custom Cursor Style */
-        body {
-            cursor: url('ghost-cursor.png'), auto;  /* Ensure this path is correct */
+            border: 1px dashed lime;
         }
     </style>
 
     <script>
+        let originalTitle = document.title;
+        let glitchTitle = "SYSTEM ERROR - 404 THREADS MISSING";
+
+        function glitchTitleEffect() {
+            document.title = (Math.random() > 0.5) ? glitchTitle : originalTitle;
+        }
+
+        setInterval(glitchTitleEffect, 3000);
+    </script>
+
+    <p id="typing" style="color:gray; font-style:italic; display:none;">mirrors is typing...</p>
+
+    <script>
+        function showTyping() {
+            document.getElementById("typing").style.display = "block";
+            setTimeout(() => { document.getElementById("typing").style.display = "none"; }, 5000);
+        }
+        
+        setTimeout(showTyping, Math.random() * 20000 + 5000); // Random between 5s and 25s
+    </script>
+
+    <!-- Function to show the login "Oops" popup -->
+    <script>
+        function showLoginPopup() {
+            let popup = window.open("", "OopsPopup", "width=500,height=500");
+            popup.document.write(`
+                <html>
+                    <head><title>Oops!</title></head>
+                    <body style="background:black; color:red; text-align:center; font-family:Courier;">
+                        <h2>Oops! You aren't supposed to be here...</h2>
+                        <img src="creepy_image.jpg" width="300">
+                        <p>This page doesn't exist. Please move along.</p>
+                        <p><a href="#" onclick="window.close()">Close</a></p>
+                    </body>
+                </html>
+            `);
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>alt.clearwater.mysteries</h1>
+    <p>Welcome to the underground discussion board for Clearwater’s unsolved mysteries.</p>
+
+    <!-- Main Links from the Home Page to Archives and More Pages -->
+    <p><a href="archives.html">Go to the Archives</a></p>
+    <p><a href="about.html">Learn More About Us</a></p>
+    <p><a href="contact.html">Contact Us</a></p>
+    <p><a href="the_truth.html">The Truth</a></p>
+
+    <!-- Login Link (which opens the popup) -->
+    <p><a href="#" onclick="showLoginPopup()">[Login]</a></p>
+
+    <!-- Audio Player (Fixed on Page) -->
+    <div id="audioPlayer">
+        <audio controls autoplay loop>
+            <source src="your-song-file.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+</body>
+</html>
