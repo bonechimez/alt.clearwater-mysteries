@@ -3,7 +3,7 @@
 <head>
     <style>
     body {
-        background: url('your-image.jpg') repeat; /
+        background: url('your-image.jpg') repeat; 
         margin: 0;
         padding: 0;
         font-family: 'Courier New', monospace;
@@ -19,7 +19,6 @@
 
     h1 {
         text-align: center;
-        position: relative;
     }
 
     .thread a {
@@ -33,7 +32,7 @@
 </style>
 
     <meta charset="UTF-8">
-    <title>The Truth. - alt.clearwater.mysteries</title>
+    <title>The Truth - alt.clearwater.mysteries</title>
     <style>
         body {
             background-color: black;
@@ -44,27 +43,16 @@
 
         h1 {
             text-align: center;
-            position: relative;
         }
 
         p {
             text-align: center;
         }
 
-       
-        .secret-dot {
-            position: absolute;
-            top: 0;
-            right: -8px;
-            font-size: 30px;  
-            cursor: pointer;
-            opacity: 0.6; 
-            color: white;
-        }
-
         
-        .secret-dot:hover {
-            opacity: 1;
+        .secret-dot {
+            cursor: pointer;
+            font-size: 30px; 
         }
     </style>
 
@@ -81,5 +69,10 @@
 </head>
 <body>
 
-    <h1>The Truth<span class="secret-dot" onclick="askForPassword()">.</span></h1>
-    <p>This
+    <h1>The Truth</h1>
+    <p>This page contains the most sensitive information. It can only be viewed by users with admin-level access<span class="secret-dot" onclick="askForPassword()">.</span></p>
+
+    <p><a href="archives.html">Back to the Archives</a></p>
+
+</body>
+</html>
