@@ -1,128 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+    body {
+        background: url('your-image.jpg') repeat; 
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', monospace;
+        color: white;
+    }
+
+    h1, p, .thread {
+        background-color: rgba(0, 0, 0, 0.7); 
+        padding: 10px;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .thread a {
+        color: cyan;
+        text-decoration: none;
+    }
+
+    .thread a:hover {
+        text-decoration: underline;
+    }
+</style>
+
     <meta charset="UTF-8">
     <title>The Truth - alt.clearwater.mysteries</title>
     <style>
         body {
-            background: url('your-image.jpg') repeat;
-            margin: 0;
-            padding: 0;
-            font-family: 'Courier New', monospace;
+            background-color: black;
             color: white;
-            cursor: url('ghost-cursor.png'), auto;
+            font-family: 'Roboto', sans-serif;
+            cursor: url('ghost-cursor.png'), auto; 
         }
 
-        h1, p {
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            border-radius: 5px;
-            margin: 10px auto;
-            max-width: 700px;
+        h1 {
+            text-align: center;
+            position: relative;
+        }
+
+        p {
             text-align: center;
         }
 
-        a {
-            color: cyan;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-      
+    
         .secret-dot {
-            position: fixed;
-            bottom: 15px;
-            left: 15px;
-            width: 10px;
-            height: 10px;
-            background-color: rgba(255,255,255,0.2);
-            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: -10px;
+            font-size: 20px;
             cursor: pointer;
+            opacity: 0.1; 
         }
 
        
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 10;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            justify-content: center;
-            align-items: center;
-        }
-
-        .modal-content {
-            background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            border-radius: 10px;
-            color: white;
-            font-family: 'Courier New', monospace;
-            text-align: center;
-        }
-
-        input, button {
-            font-family: 'Courier New', monospace;
-            padding: 5px;
-            background-color: black;
-            color: white;
-            border: 1px solid white;
-            margin-top: 10px;
-        }
-
-        #error-msg {
-            color: red;
-            display: none;
-            margin-top: 10px;
+        .secret-dot:hover {
+            opacity: 1;
         }
     </style>
+
+    <script>
+        function askForPassword() {
+            const pass = prompt("Enter passphrase:");
+            if (pass && pass.toLowerCase() === "mincemeat") {
+                window.location.href = "knockers.html";
+            } else {
+                alert("Access denied.");
+            }
+        }
+    </script>
 </head>
 <body>
 
-    <h1>The Truth</h1>
+    <h1>The Truth<span class="secret-dot" onclick="askForPassword()">.</span></h1>
     <p>This page contains the most sensitive information. It can only be viewed by users with admin-level access.</p>
+
     <p><a href="archives.html">Back to the Archives</a></p>
-
-  
-    <div class="secret-dot" onclick="openModal()"></div>
-
-   
-    <div class="modal" id="passModal">
-        <div class="modal-content">
-            <p>ACCESS PHRASE REQUIRED</p>
-            <input type="text" id="codeInput" placeholder="Enter phrase">
-            <br>
-            <button onclick="checkCode()">Submit</button>
-            <div id="error-msg">Incorrect passphrase.</div>
-        </div>
-    </div>
-
-    <script>
-        function openModal() {
-            document.getElementById("passModal").style.display = "flex";
-        }
-
-        function checkCode() {
-            const input = document.getElementById("codeInput").value.trim().toLowerCase();
-            if (input === "mincemeat") {
-                window.location.href = "knockers.html"; // link to the secret page
-            } else {
-                document.getElementById("error-msg").style.display = "block";
-            }
-        }
-
-     
-        window.addEventListener("keydown", function(e) {
-            if (e.key === "Escape") {
-                document.getElementById("passModal").style.display = "none";
-            }
-        });
-    </script>
 
 </body>
 </html>
+
